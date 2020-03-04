@@ -9,7 +9,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import beans.Vol;
 
-public class VolDao implements IVolDao {
+public class VolDAO implements IVolDAO {
 	
 	SessionFactory sessionfactory = new Configuration().configure("/ressources/hibernate.cfg.xml").buildSessionFactory();
 	Session session = sessionfactory.openSession();

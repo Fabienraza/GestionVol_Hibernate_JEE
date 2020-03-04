@@ -3,8 +3,7 @@ package beans;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+
 
 @Entity
 public class Pilote {
@@ -16,14 +15,12 @@ public class Pilote {
 	private String prenom;
 	private String telephone;
 	
-	@JoinColumn (name="idVol")
-	@ManyToOne
-	private Vol Vol;
 	
 	
-	/*
-	 * CONSTRUCTEURS
-	 */
+									/**************
+									 * CONSTRUCTEURS
+									 **************/
+	
 	public Pilote() {
 	}
 	
@@ -37,12 +34,17 @@ public class Pilote {
 	}
 
 
-	
-	
-	
-	/*
-	 * GETTER ET SETTER
-	 */
+	public Pilote(String nom, String prenom, String telephone) {
+		super();
+		this.nom = nom;
+		this.prenom = prenom;
+		this.telephone = telephone;
+	}
+
+											
+												/*******************
+												 * GETTER ET SETTER
+												 *******************/
 	public int getIdPilote() {
 		return idPilote;
 	}
@@ -85,9 +87,9 @@ public class Pilote {
 
 	
 	
-	/*
-	 * METHODE TO STRING
-	 */
+										/*******************
+										 * METHODE TO STRING
+										 *******************/
 	@Override
 	public String toString() {
 		return "Pilote [idPilote=" + idPilote + ", nom=" + nom + ", prenom=" + prenom + ", telephone=" + telephone

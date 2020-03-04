@@ -10,16 +10,16 @@ import org.hibernate.cfg.Configuration;
 
 import beans.Pilote;
 
-public class PiloteDao implements IPiloteDao {
+public class PiloteDAO implements IPiloteDAO {
 	
 	SessionFactory sessionfactory = new Configuration().configure("/ressources/hibernate.cfg.xml").buildSessionFactory();
 	Session session = sessionfactory.openSession();
 	
 	
 	
-	/*
-	 * METHODE POUR AJOUTER UN PILOTE
-	 */
+				/*
+				 * METHODE POUR AJOUTER UN PILOTE
+				 */
 	@Override
 	public int addPilot(Pilote add) {
 		try {
@@ -36,9 +36,9 @@ public class PiloteDao implements IPiloteDao {
 	
 
 	
-	/*
-	 *  METHODE POUR AFFICHER LA LISTE DES PILOTES DE LA BASE DE DONNEE
-	 */
+				/*
+				 *  METHODE POUR AFFICHER LA LISTE DES PILOTES DE LA BASE DE DONNEE
+				 */
 	@Override
 	public List<Pilote> getPilotList() {
 		List<Pilote> tab = new ArrayList<Pilote>();
