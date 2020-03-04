@@ -43,7 +43,7 @@ public class AjoutVolServlet extends HttpServlet {
 		List<Pilote> listePilote = new ArrayList<Pilote>();
 		IPiloteDAO dao = new PiloteDAO();
 		
-		dao.getPilotList();
+		listePilote = dao.getPilotList();
 		
 		request.setAttribute("listeP", listePilote);
 		
@@ -75,8 +75,7 @@ public class AjoutVolServlet extends HttpServlet {
 		
 		access.addVol(vol);
 		
-		this.getServletContext().getRequestDispatcher("/WEB-INF/webfiles/ajoutreussi.jsp").forward(request, response);
-		
+		this.getServletContext().getRequestDispatcher("/AjoutReussi").forward(request, response);
 	}
 
 }

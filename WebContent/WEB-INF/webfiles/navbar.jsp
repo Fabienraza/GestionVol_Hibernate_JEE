@@ -6,8 +6,8 @@
 	</button>
 	<div class="collapse navbar-collapse" id="navbarText">
 		<ul class="navbar-nav mr-auto">
-			<li class="nav-item active"><a class="nav-link" href="#">Accueil<span class="sr-only">(current)</span></a></li>
-			<li class="nav-item"><a class="nav-link" href="/3-GestionVol_Hibernate_JEE/AjoutPilote">Ajouter un pilote</a></li>
+			<li class="nav-item active"><a class="nav-link" href="/3-GestionVol_Hibernate_JEE/HomePage">Accueil<span class="sr-only">(current)</span></a></li>
+			<li class="nav-item"><a class="nav-link" href="/3-GestionVol_Hibernate_JEE/ajoutpilote">Ajouter un pilote</a></li>
 			<li class="nav-item"><a class="nav-link" href="#">Liste des pilotes</a></li>
 			<li class="nav-item"><a class="nav-link" href="/3-GestionVol_Hibernate_JEE/AjoutVol">Ajouter un vol</a></li>
 			<li class="nav-item"><a class="nav-link" href="#">Liste des vols</a></li>

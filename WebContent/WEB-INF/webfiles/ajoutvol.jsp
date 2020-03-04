@@ -9,7 +9,7 @@
 	</head>
 	
 	<body>
-		<form action="/3-GestionFormation_Hibernate_JEE/AjoutVol" method="post">
+		<form action="/3-GestionVol_Hibernate_JEE/AjoutVol" method="post">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -29,17 +29,17 @@
 			</div>
 
 			<div class="form-group">
+				<label>PILOTE DU VOL</label> <br>
 				<select name="idPiloteVol">
-					<c:forEach items="${listeP}" var="pilote">
-						<option value="${pilote.idPilote}"> ${pilote.nom} </option>
+					<c:forEach items="${listeP}" var="p">
+						<option value="${p.idPilote}"> ${p.nom} </option>
 					</c:forEach>
 				</select>
-			</div>
+			</div> 
 
 			<div class="form-group">
-				<button type="button" class="btn btn-warning">Valider</button>
+				<input type="submit" class="btn btn-warning" value="Valider">
 			</div>
-
 		</div>
 	</form>
 	</body>

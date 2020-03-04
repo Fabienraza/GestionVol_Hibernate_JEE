@@ -14,13 +14,15 @@ import dao.IPiloteDAO;
 import dao.PiloteDAO;
 
 
-@WebServlet("/AjoutPilote")
+@WebServlet("/ajoutpilote")
 public class AjoutPiloteServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
      
 	
  
     public AjoutPiloteServlet() {
+    	
+    	
         super();
         // TODO Auto-generated constructor stub
     }
@@ -37,6 +39,7 @@ public class AjoutPiloteServlet extends HttpServlet {
 	
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		Pilote pilote1 = new Pilote();
 			pilote1.setNom(request.getParameter("nom"));
 			pilote1.setPrenom(request.getParameter("prenom"));
@@ -45,9 +48,8 @@ public class AjoutPiloteServlet extends HttpServlet {
 		IPiloteDAO dao = new PiloteDAO();
 		
 		dao.addPilot(pilote1);
-		
+
 		this.getServletContext().getRequestDispatcher("/AjoutReussi").forward(request, response);
-		
 	}
 
 }

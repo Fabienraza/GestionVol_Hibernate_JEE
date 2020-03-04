@@ -20,12 +20,12 @@ public class MainTest {
 		dao.addPilot(pil1);
 		dao.addPilot(pil2);
 		
-		Vol v1 = new Vol(new Date());
-		Vol v2 = new Vol(new Date(20,02,15));
-		
-		IVolDAO access = new VolDAO();
-		access.addVol(v1);
-		access.addVol(v2);
+//		Vol v1 = new Vol(new Date());
+//		Vol v2 = new Vol(new Date(20,02,15));
+//		
+//		IVolDAO access = new VolDAO();
+//		access.addVol(v1);
+//		access.addVol(v2);
 		
 	
 	}
