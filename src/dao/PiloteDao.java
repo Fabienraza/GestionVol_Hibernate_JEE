@@ -45,7 +45,8 @@ public class PiloteDAO implements IPiloteDAO {
 		
 		try {
 			session.beginTransaction();
-			tab = session.createQuery("from pilote").list();
+			tab = session.createQuery("from Pilote").list();
+			session.close();
 			return tab;
 		} catch (HibernateException e) {
 			e.printStackTrace();

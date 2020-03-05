@@ -36,7 +36,7 @@ public class VolDAO implements IVolDAO {
 		
 		try {
 			session.beginTransaction();
-			tab = session.createQuery("from vol").list();
+			tab = session.createQuery("from Vol").list();
 			return tab;
 		} catch (HibernateException e) {
 			e.printStackTrace();

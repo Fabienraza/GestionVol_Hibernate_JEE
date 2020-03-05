@@ -35,7 +35,7 @@ public class Vol {
 	
 	@JoinColumn (name = "idPilote")			
 	@ManyToOne
-	private Pilote idPilote;
+	private Pilote pilote;
 	
 											
 											/***************
@@ -77,20 +77,23 @@ public class Vol {
 	}
 
 	public Pilote getPilote() {
-		return idPilote;
+		return pilote;
 	}
 
 	public void setPilote(Pilote pilote) {
-		this.idPilote = pilote;
+		this.pilote = pilote;
 	}
+
+
 
 												/*******************
 												 * METHODE TO STRING
 												*******************/
 	@Override
 	public String toString() {
-		return "Vol [idVol=" + idVol + ", dateVol=" + dateVol + "]";
+		return "Vol [idVol=" + idVol + ", dateVol=" + dateVol + ", Pilote=" + pilote + "]";
 	}
+	
 
 
 }
